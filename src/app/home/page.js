@@ -15,15 +15,15 @@ const navigation = [
   { name: 'Height8', href: 'http://203.110.80.140/h8ssrms/Login.aspx' },
 ]
 
-const Home = ()=> {
+const HomePage = ()=> {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-white bg-cover overflow-hidden h-screen">
+    <div className="bg-white bg-cover overflow-hidden min-h-screen">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">delDSL</span>
               <img
                 className="h-14px w-auto"
@@ -117,7 +117,7 @@ const Home = ()=> {
           />
         </div>
 
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
           {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Announcing our next round of funding.{' '}
@@ -135,7 +135,7 @@ const Home = ()=> {
             With delDSL services, you get to experience total cost control, low rental plans, exciting offers and easy billing. They are flexible, with crystal clear voice, and everyone knows how to use them at homes. The optic fiber cables used in the telephones gives you clear sound clarity and no disturbances at all!.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Link href='/details' className="rounded-full bg-indigo-600 px-24 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              <Link href='/detail' className="rounded-full bg-indigo-600 px-24 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
               </Link>
@@ -162,6 +162,6 @@ const Home = ()=> {
   )
 }
 
-export default Home;
+export default HomePage;
 
 

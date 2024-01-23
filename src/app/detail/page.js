@@ -3,11 +3,6 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import React, { useState } from 'react'
 import Link from 'next/link'
-<<<<<<< HEAD
-=======
-import Topology from '../../components/Topology'
->>>>>>> 6b906fbbc382624ae9336065dcc4a880ca66c17e
-
 
 
 const navigation = [
@@ -21,11 +16,6 @@ const navigation = [
 
 const Details = ()=> {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-<<<<<<< HEAD
-
-=======
-  const [showtopo, setShowTopo] = useState(false)
->>>>>>> 6b906fbbc382624ae9336065dcc4a880ca66c17e
 
   return (
 

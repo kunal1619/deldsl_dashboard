@@ -2,12 +2,7 @@
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import React, { useState } from 'react'
-<<<<<<< HEAD
-=======
-import ReactFlow from 'reactflow';
->>>>>>> 6b906fbbc382624ae9336065dcc4a880ca66c17e
-import 'reactflow/dist/style.css';
- 
+
 
 
 
@@ -23,15 +18,14 @@ const navigation = [
 const Extensions = ()=> {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-<<<<<<< HEAD
-=======
+
   const initialNodes = [
     { id: '1', position: { x: 0, y: 0 }, data: { label: 'mill-router_1' } },
     { id: '2', position: { x: 0, y: 100 }, data: { label: 'mill-router_2' } },
   ];
   const initialEdges = [{ id: 'e1-2', source: '1', target: '2' }];
    
->>>>>>> 6b906fbbc382624ae9336065dcc4a880ca66c17e
+
 
   return (
     <div className="bg-white bg-cover  min-h-screen">
@@ -225,11 +219,11 @@ const Extensions = ()=> {
             </td>
             <td className="px-4 py-3 border text-md font-semibold">6009</td>
             <td className="px-4 py-3 border text-xs">
-<<<<<<< HEAD
+
               <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 9560452890 </span>
-=======
+
               <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 9876543210 </span>
->>>>>>> 6b906fbbc382624ae9336065dcc4a880ca66c17e
+
             </td>
    
           </tr>
@@ -404,7 +398,7 @@ const Extensions = ()=> {
             </td>
             
           </tr>
-<<<<<<< HEAD
+
           <tr className="text-gray-700">
             <td className="px-4 py-3 border">
               <div className="flex items-center text-sm">
@@ -424,8 +418,8 @@ const Extensions = ()=> {
             </td>
             
           </tr>
-=======
->>>>>>> 6b906fbbc382624ae9336065dcc4a880ca66c17e
+
+
         </tbody>
       </table>
     </div>

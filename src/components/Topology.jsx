@@ -20,11 +20,9 @@ function Topology() {
   );
 }
 
-<<<<<<< HEAD
-// export default Topology;
-=======
+
 export default Topology;
->>>>>>> 6b906fbbc382624ae9336065dcc4a880ca66c17e
+
 
 
 

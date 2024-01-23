@@ -3,7 +3,11 @@
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import React, { useState } from 'react'
+<<<<<<< HEAD
 import ReactFlow , { Controls, Background} from 'reactflow';
+=======
+import ReactFlow from 'reactflow';
+>>>>>>> 6b906fbbc382624ae9336065dcc4a880ca66c17e
 import 'reactflow/dist/style.css';
  
 
@@ -19,6 +23,7 @@ const navigation = [
 ]
 
 const Topology = ()=> {
+<<<<<<< HEAD
   // const { fitView } = useZoomPanHelper();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
@@ -40,6 +45,15 @@ const Topology = ()=> {
     { id: '6', position: { x: 900, y: 130 }, data: { label: 'Extreme Peering 80.20 (R2NET)'} },
   ];
   // const initialEdges = [{ id: 'e1-2', source: '1', target: '2' }];
+=======
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  const initialNodes = [
+    { id: '1', position: { x: 0, y: 0 }, data: { label: 'mill-router_1' } },
+    { id: '2', position: { x: 0, y: 100 }, data: { label: 'mill-router_2' } },
+  ];
+  const initialEdges = [{ id: 'e1-2', source: '1', target: '2' }];
+>>>>>>> 6b906fbbc382624ae9336065dcc4a880ca66c17e
    
 
   return (
@@ -146,6 +160,7 @@ const Topology = ()=> {
           <div className="text-center">
            {/* -----------------topology------------ */}
           <div className='h-screen '>
+<<<<<<< HEAD
       <ReactFlow 
         nodes={initialNodes} 
         edges={edges}  
@@ -158,6 +173,9 @@ const Topology = ()=> {
       <Background variant="dots" gap={16} size={2} color="#dddddd" />
       <Controls className="react-flow_controls" showInteractive={false} />
       </ReactFlow>
+=======
+      <ReactFlow nodes={initialNodes} edges={initialEdges} />
+>>>>>>> 6b906fbbc382624ae9336065dcc4a880ca66c17e
     </div>
           </div>
         </div>

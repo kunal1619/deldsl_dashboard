@@ -14,7 +14,10 @@
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
+<<<<<<< HEAD
     "react-flow-renderer": "^10.3.17",
+=======
+>>>>>>> 6b906fbbc382624ae9336065dcc4a880ca66c17e
     "reactflow": "^11.10.2"
   },
   "devDependencies": {

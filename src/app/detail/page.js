@@ -44,7 +44,7 @@ const Details = ()=> {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-600 duration-150">
+              <a key={item.name} href={item.href} target='_blank' className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-600 duration-150">
                 {item.name}
               </a>
             ))}
@@ -83,6 +83,7 @@ const Details = ()=> {
                     <a
                       key={item.name}
                       href={item.href}
+                      target='_blank'
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
@@ -131,10 +132,10 @@ const Details = ()=> {
                 </div>
              </Link>
                 
-                <Link href="#">
+                <Link href="/matrix">
                 <div className="card cursor-pointer">
                     <i className="bx bx-laptop bx-md"></i>
-                    <h2>Airtel Transit</h2>
+                    <h2>Escalation Matrix</h2>
                          
                 </div>
                 </Link>

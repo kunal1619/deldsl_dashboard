@@ -1,4 +1,3 @@
-
 "use client"
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -24,11 +23,23 @@ const Topology = ()=> {
   
   // default (bezier), straight , step and smoothstep
   const edges =  [
-    { id: '2-1', source: '1', target: '2',label: "XGE0/0/1" , type: "step and smoothstep" , animated: true},
-    { id: '3-5', source: '3', target: '5',label: "XGE0/0/1" , type: "step and smoothstep" , animated: true},
-    { id: '4-6', source: '4', target: '6',label: "XGE0/0/4" , type: "step and smoothstep" , animated: true},
+    { id: '2-1', source: '1', target: '2',label: "XGE0/0/1" , type: "step and smoothstep" , animated: true, style:{strokeWidth:3, stroke: '#ff8533'}},
+    { id: '3-5', source: '3', target: '5',label: "XGE0/0/1" , type: "step and smoothstep" , animated: true, style:{strokeWidth:3, stroke: '#ff8533'}},
+    { id: '4-6', source: '4', target: '6',label: "XGE0/0/4" , type: "step and smoothstep" , animated: true, style:{strokeWidth:3, stroke: '#ff8533'}},
     { id: '2-5', source: '2', target: '5',label: "XGE0/0/4(80.19) - XGE0/0/3(80.18)", type: "step", animated: true },
     { id: '5-6', source: '5', target: '6',label: "XGE0/0/4(80.19) - XGE0/0/3(80.20)",type: "step", animated: true },
+
+    // --------------------------core routers-----------------------------
+
+    { id: '7-9', source: '7', target: '9',label: "XGE0/1/2(80.11)" , type: "step and smoothstep" , animated: true, style:{strokeWidth:2, stroke: '#ff8533'}},
+    { id: '8-9', source: '8', target: '9',label: "XGE0/1/1(80.11)" , type: "step and smoothstep" , animated: true, style:{strokeWidth:2, stroke: '#ff8533'}},
+    { id: '9-10', source: '9', target: '10',label: "Xe0/0/1:0(10.80) - (80.11)sfp-plus 5" , type: "step" , animated: true},
+    { id: '9-11', source: '9', target: '11',label: "Xe0/0/1:0(10.80) - (80.11)sfp-plus 5" , type: "step" , animated: true, style:{strokeWidth:1, stroke: '#330000'}},
+    { id: '2-6', source: '2', target: '6',label: "Xe0/0/3(80.20) - XGE0/0/2(80.18)" , type: "step" , animated: true, style:{strokeWidth:1, stroke: '#330000'}},
+    { id: '2-15', source: '2', target: '15',label: "Ge0/0/7(80.10) - GE0/0/1(80.18)" , type: "step" , animated: true, style:{strokeWidth:1, stroke: '#330000'}},
+    { id: '2-15', source: '2', target: '15',label: "Ge0/0/7(80.10) - GE0/0/1(80.18)" , type: "step and smoothstep" , animated: true, style:{strokeWidth:1, stroke: '#330000'}},
+    { id: '2-15', source: '2', target: '15',label: "Ge0/0/7(80.10) - GE0/0/1(80.18)" , type: "straight" , animated: true, style:{strokeWidth:1, stroke: '#330000'}},
+    
   ];
 
   const initialNodes = [
@@ -38,6 +49,19 @@ const Topology = ()=> {
     { id: '4', position: { x: 900, y: 0 }, data: { label: 'Google 2G (R2NET) As15169'} },
     { id: '5', position: { x: 500, y: 130 }, data: { label: 'Extreme Peering 80.19 (Sify)'} },
     { id: '6', position: { x: 900, y: 130 }, data: { label: 'Extreme Peering 80.20 (R2NET)'} },
+
+    // --------------------------core routers-----------------------------
+    { id: '7', position: { x: 0, y: 250 }, data: { label: 'Google 2G AS15169 (Tata P2P)' } },
+    { id: '8', position: { x: 170, y: 250 }, data: { label: 'Airtel 1.5G AS9498'} },
+
+    { id: '9', position: { x: 0, y: 400 }, data: { label: 'Juniper 80.11' } },
+    { id: '10', position: { x: 350, y: 400 }, data: { label: '80.70 BRAS 10.80'} },
+    { id: '11', position: { x: 570, y: 400 }, data: { label: '80.74 BRAS 80.80'} },
+    { id: '12', position: { x: 780, y: 400 }, data: { label: '80.50 Router NE8000 80.15'} },
+    { id: '13', position: { x: 980, y: 400 }, data: { label: '80.30 BRAS(IP) 10.70'} },
+    { id: '14', position: { x: 1180, y: 400 }, data: { label: 'CORE 80.9'} }, 
+    { id: '15', position: { x: 1370, y: 400 }, data: { label: 'CORE 80.10'} }, 
+    
   ];
   // const initialEdges = [{ id: 'e1-2', source: '1', target: '2' }];
 
@@ -72,7 +96,7 @@ const Topology = ()=> {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-600 duration-150">
+              <a key={item.name} href={item.href} target='_blank' className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-600 duration-150">
                 {item.name}
               </a>
             ))}
@@ -111,6 +135,7 @@ const Topology = ()=> {
                     <a
                       key={item.name}
                       href={item.href}
+                      target='_blank'
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}

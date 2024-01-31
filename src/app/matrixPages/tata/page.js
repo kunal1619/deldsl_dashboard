@@ -2,7 +2,7 @@
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import React, { useState } from 'react'
-import Link from 'next/link'
+
 
 
 
@@ -15,7 +15,7 @@ const navigation = [
   { name: 'Height8', href: 'http://203.110.80.140/h8ssrms/Login.aspx' },
 ]
 
-const HomePage = ()=> {
+const tata = ()=> {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -44,7 +44,7 @@ const HomePage = ()=> {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} target='_blank' className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-600 duration-150">
+              <a key={item.name} href={item.href} className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-600 duration-150">
                 {item.name}
               </a>
             ))}
@@ -83,7 +83,6 @@ const HomePage = ()=> {
                     <a
                       key={item.name}
                       href={item.href}
-                      target='_blank'
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
@@ -104,9 +103,12 @@ const HomePage = ()=> {
         </Dialog>
       </header>
 
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+      
+
+
+      <div className="relative isolate px-6 pt-14 lg:px-8  h-screen flex items-center justify-center">
         <div
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          className="absolute inset-x-0  -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
         >
           <div
@@ -118,51 +120,98 @@ const HomePage = ()=> {
           />
         </div>
 
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
-          {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.{' '}
-              <a href="#" className="font-semibold text-indigo-600">
-                <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
-          </div> */}
-          <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Step to enrich your online <span className='text-cyan-700'>reachability</span>
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-            With delDSL services, you get to experience total cost control, low rental plans, exciting offers and easy billing. They are flexible, with crystal clear voice, and everyone knows how to use them at homes. The optic fiber cables used in the telephones gives you clear sound clarity and no disturbances at all!.
-            </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Link href='/detail' className="rounded-full bg-indigo-600 px-24 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Get started
-              </Link>
+       
+        
+
+        {/* --------------------table----------------------- */}
+
+        <div className="relative overflow-x-auto shadow-md sm:rounded-lg w-full">
+        <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
+              <span className="mb-2 block text-lg font-semibold text-primary">
+                Our Escalation matrixes
+              </span>
+              <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px]">
+                <span className='text-amber-500'>TCS</span> <span className='text-gray-600'>Escalation</span> 
+              </h2>
               
             </div>
- 
-          </div>
-        </div>
+    <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead className="text-xs text-gray-700 uppercase dark:text-gray-400">
+            <tr>
+                <th scope="col" className="px-6 py-3 text-xl bg-gray-50 dark:bg-gray-800">
+                    Level - 1
+                </th>
+                <th scope="col" className="px-6 py-3 text-xl bg-gray-50">
+                    Level - 2
+                </th>
+                <th scope="col" className="px-6 py-3 text-xl bg-gray-50 dark:bg-gray-800">
+                    Level - 3
+                </th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr className="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Sev 1-After 2 hours
+                </th>
+                <td className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Sev 1-After 4 hours
+                </td>
+                <td className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                Sev 1-After 8 hours
+                </td>
+                
+            </tr>
+            <tr className="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                Sev 2-After 4 hours
+                </th>
+                <td className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                Sev 2-After 8 hours
+                </td>
+                <td className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                Sev 2-After 12 hours
+                </td>
+              
+            </tr>
+            <tr className="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Email: escalation.desk@tatacommumication.com
+                </th>
+                <td className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Email: edshiftlead@tatacommunications.com
+                </td>
+                <td className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Email: ashish.rupwal@tatacommunications.com <br></br>
+                    Email: wasim.bharde@tatacommunications.com
+                </td>
+               
+            </tr>
+            <tr className="border-b border-gray-300 dark:border-gray-700">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Direct: 020 - 66144800
+                </th>
+                <td className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                Direct: 020 - 66153388
+                </td>
+                <td className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                Direct: 020 - 66153647 <br></br>
+                Mr. Wasim - 09607567666
+                </td>
+                
+            </tr>
+          
+        </tbody>
+    </table>
+</div>
 
-        {/* <div
-          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          aria-hidden="true"
-        >
-          <div
-            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
-          />
-        </div> */}
+    
       </div>
     </div>
   )
 }
 
-export default HomePage;
+export default tata;
 
 

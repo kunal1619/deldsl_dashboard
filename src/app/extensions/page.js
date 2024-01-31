@@ -53,7 +53,7 @@ const Extensions = ()=> {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-600 duration-150">
+              <a key={item.name} href={item.href} target='_blank' className="text-base font-semibold leading-6 text-gray-900 hover:text-gray-600 duration-150">
                 {item.name}
               </a>
             ))}
@@ -92,6 +92,7 @@ const Extensions = ()=> {
                     <a
                       key={item.name}
                       href={item.href}
+                      target='_blank'
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
@@ -207,8 +208,8 @@ const Extensions = ()=> {
           <tr className="text-gray-700">
             <td className="px-4 py-3 border">
               <div className="flex items-center text-sm">
-                <div className="relative w-8 h-8 mr-3 rounded-full">
-                  <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
+                <div className="relative w-8 h-8 mr-3 rounded-full hover:scale-150 transform transition duration-30">
+                  <img className="object-cover w-full h-full rounded-full" src="/extension_pic/neeraj.enc" alt="" loading="lazy" />
                   <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                 </div>
                 <div>
@@ -222,7 +223,6 @@ const Extensions = ()=> {
 
               <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 9560452890 </span>
 
-              <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 9876543210 </span>
 
             </td>
    
@@ -268,8 +268,8 @@ const Extensions = ()=> {
           <tr className="text-gray-700">
             <td className="px-4 py-3 border">
               <div className="flex items-center text-sm">
-                <div className="relative w-8 h-8 mr-3 rounded-full">
-                  <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
+                <div className="relative w-8 h-8 mr-3 rounded-full hover:scale-125 transform transition duration-300">
+                  <img className="object-cover w-full h-full rounded-full " src="/extension_pic/rahul.enc" alt="" loading="lazy" />
                   <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                 </div>
                 <div>
@@ -287,8 +287,8 @@ const Extensions = ()=> {
           <tr className="text-gray-700">
             <td className="px-4 py-3 border">
               <div className="flex items-center text-sm">
-                <div className="relative w-8 h-8 mr-3 rounded-full">
-                  <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
+                <div className="relative w-8 h-8 mr-3 rounded-full hover:scale-125 transform transition duration-30">
+                  <img className="object-cover w-full h-full rounded-full" src="/extension_pic/jitu.enc" alt="" loading="lazy" />
                   <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                 </div>
                 <div>
@@ -415,6 +415,83 @@ const Extensions = ()=> {
             <td className="px-4 py-3 border text-md font-semibold">6014</td>
             <td className="px-4 py-3 border text-xs">
               <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 9340639669 </span>
+            </td>
+            
+          </tr>
+
+          <tr className="text-gray-700">
+            <td className="px-4 py-3 border">
+              <div className="flex items-center text-sm">
+                <div className="relative w-8 h-8 mr-3 rounded-full">
+                  <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
+                  <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
+                </div>
+                <div>
+                  <p className="font-semibold">Mahinder Parihar</p>
+                  {/* <p className="text-xs text-gray-600">Developer</p> */}
+                </div>
+              </div>
+            </td>
+            <td className="px-4 py-3 border text-md font-semibold">6015</td>
+            <td className="px-4 py-3 border text-xs">
+              <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 9205589577 </span>
+            </td>
+            
+          </tr>
+        <tr className="text-gray-700">
+            <td className="px-4 py-3 border">
+              <div className="flex items-center text-sm">
+                <div className="relative w-8 h-8 mr-3 rounded-full">
+                  <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
+                  <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
+                </div>
+                <div>
+                  <p className="font-semibold">Rohit Kumar</p>
+                  {/* <p className="text-xs text-gray-600">Developer</p> */}
+                </div>
+              </div>
+            </td>
+            <td className="px-4 py-3 border text-md font-semibold">####</td>
+            <td className="px-4 py-3 border text-xs">
+              <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 9205243234 </span>
+            </td>
+            
+          </tr>
+        <tr className="text-gray-700">
+            <td className="px-4 py-3 border">
+              <div className="flex items-center text-sm">
+                <div className="relative w-8 h-8 mr-3 rounded-full">
+                  <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
+                  <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
+                </div>
+                <div>
+                  <p className="font-semibold">Champalal Parihar</p>
+                  {/* <p className="text-xs text-gray-600">Developer</p> */}
+                </div>
+              </div>
+            </td>
+            <td className="px-4 py-3 border text-md font-semibold">6011</td>
+            <td className="px-4 py-3 border text-xs">
+              <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 8769309845 </span>
+            </td>
+            
+          </tr>
+        <tr className="text-gray-700">
+            <td className="px-4 py-3 border">
+              <div className="flex items-center text-sm">
+                <div className="relative w-8 h-8 mr-3 rounded-full">
+                  <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
+                  <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
+                </div>
+                <div>
+                  <p className="font-semibold">Mohit Sharma</p>
+                  {/* <p className="text-xs text-gray-600">Developer</p> */}
+                </div>
+              </div>
+            </td>
+            <td className="px-4 py-3 border text-md font-semibold">####</td>
+            <td className="px-4 py-3 border text-xs">
+              <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 9982234116 </span>
             </td>
             
           </tr>
@@ -653,6 +730,25 @@ const Extensions = ()=> {
             </td>
             
           </tr>
+          <tr className="text-gray-700">
+            <td className="px-4 py-3 border">
+              <div className="flex items-center text-sm">
+                <div className="relative w-8 h-8 mr-3 rounded-full">
+                  <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
+                  <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
+                </div>
+                <div>
+                  <p className="font-semibold">Puneet </p>
+                  {/* <p className="text-xs text-gray-600">Developer</p> */}
+                </div>
+              </div>
+            </td>
+            <td className="px-4 py-3 border text-md font-semibold">####</td>
+            <td className="px-4 py-3 border text-xs">
+              <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 8851501125 </span>
+            </td>
+            
+          </tr>
         </tbody>
       </table>
     </div>
@@ -661,7 +757,7 @@ const Extensions = ()=> {
 {/* --------------------------------------Sales and billing team end------------ */}
 
 
-{/* --------------------------------------Line staff start------------ */}
+{/* -------------------------------------line staff start------------ */}
 
           
 <section className="container mx-auto p-6 font-mono">
@@ -670,33 +766,34 @@ const Extensions = ()=> {
       <table className="w-full">
         <thead>
           <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-gray-100 uppercase border-b border-gray-600">
-            <th className="px-4 py-3">Name(Line staff and FE)</th>
+            <th className="px-4 py-3">Line staffs</th>
             <th className="px-4 py-3">Extension</th>
             <th className="px-4 py-3">Mobile no.</th>
 
           </tr>
         </thead>
         <tbody className="bg-white">
-        <tr className="text-gray-700">
+
+          <tr className="text-gray-700">
             <td className="px-4 py-3 border">
               <div className="flex items-center text-sm">
-                <div className="relative w-8 h-8 mr-3 rounded-full">
+                <div className="relative w-8 h-8 mr-3 rounded-full md:block">
                   <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
                   <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                 </div>
                 <div>
-                  <p className="font-semibold">Mahinder Parihar</p>
-                  {/* <p className="text-xs text-gray-600">Developer</p> */}
+                  <p className="font-semibold text-black">Pappu Ji</p>
+                  {/* <p className="text-xs text-gray-600">Manager</p> */}
                 </div>
               </div>
             </td>
-            <td className="px-4 py-3 border text-md font-semibold">6015</td>
-            <td className="px-4 py-3 border text-xs">
-              <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 9205589577 </span>
+            <td className="px-4 py-3 text-ms font-semibold border">####</td>
+            <td className="px-4 py-3 text-xs border">
+              <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 9910495877 </span>
             </td>
-            
+           
           </tr>
-        <tr className="text-gray-700">
+          <tr className="text-gray-700">
             <td className="px-4 py-3 border">
               <div className="flex items-center text-sm">
                 <div className="relative w-8 h-8 mr-3 rounded-full">
@@ -704,18 +801,170 @@ const Extensions = ()=> {
                   <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                 </div>
                 <div>
-                  <p className="font-semibold">Rohit Kumar</p>
+                <p className="font-semibold text-black">Hari</p>
+                  {/* <p className="text-xs text-gray-600">Manager</p> */}
+                </div>
+              </div>
+            </td>
+            <td className="px-4 py-3 text-md font-semibold border">####</td>
+            <td className="px-4 py-3 text-xs border">
+              <span className="px-2 py-1 font-semibold leading-tight text-orange-700 bg-gray-100 rounded-sm">9910495869</span>
+            </td>
+        
+          </tr>
+          <tr className="text-gray-700">
+            <td className="px-4 py-3 border">
+              <div className="flex items-center text-sm">
+                <div className="relative w-8 h-8 mr-3 rounded-full">
+                  <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
+                  <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
+                </div>
+                <div>
+                  <p className="font-semibold">Harish parihar</p>
+                  {/* <p className="text-xs text-gray-600">Manager</p> */}
+                </div>
+              </div>
+            </td>
+            <td className="px-4 py-3 text-md font-semibold border">#####</td>
+            <td className="px-4 py-3 text-xs border">
+              <span className="px-2 py-1 font-semibold leading-tight text-red-700 bg-red-100 rounded-sm"> 9810233967 </span>
+            </td>
+           
+          </tr>
+          <tr className="text-gray-700">
+            <td className="px-4 py-3 border">
+              <div className="flex items-center text-sm">
+                <div className="relative w-8 h-8 mr-3 rounded-full">
+                  <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
+                  <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
+                </div>
+                <div>
+                  <p className="font-semibold">Jay yadav</p>
+                  {/* <p className="text-xs text-gray-600">Manager</p> */}
+                </div>
+              </div>
+            </td>
+            <td className="px-4 py-3 text-md font-semibold border">####</td>
+            <td className="px-4 py-3 text-xs border">
+              <span className="px-2 py-1 font-semibold leading-tight text-red-700 bg-red-100 rounded-sm"> 9910477155 </span>
+            </td>
+           
+          </tr>
+          <tr className="text-gray-700">
+            <td className="px-4 py-3 border">
+              <div className="flex items-center text-sm">
+                <div className="relative w-8 h-8 mr-3 rounded-full">
+                  <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
+                  <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
+                </div>
+                <div>
+                  <p className="font-semibold">Np Roka</p>
+                  {/* <p className="text-xs text-gray-600">Programmer</p> */}
+                </div>
+              </div>
+            </td>
+            <td className="px-4 py-3 border text-md font-semibold">####</td>
+            <td className="px-4 py-3 border text-xs">
+              <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 8750055864 </span>
+            </td>
+   
+          </tr>
+          <tr className="text-gray-700">
+            <td className="px-4 py-3 border">
+              <div className="flex items-center text-sm">
+                <div className="relative w-8 h-8 mr-3 rounded-full">
+                  <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
+                  <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
+                </div>
+                <div>
+                  <p className="font-semibold">Vikash mukhiya</p>
+                  {/* <p className="text-xs text-gray-600">Designer</p> */}
+                </div>
+              </div>
+            </td>
+            <td className="px-4 py-3 border text-md font-semibold">####</td>
+            <td className="px-4 py-3 border text-xs">
+              <span className="px-2 py-1 font-semibold leading-tight text-gray-700 bg-gray-100 rounded-sm"> 9910495874 </span>
+            </td>
+          
+          </tr>
+          <tr className="text-gray-700">
+            <td className="px-4 py-3 border">
+              <div className="flex items-center text-sm">
+                <div className="relative w-8 h-8 mr-3 rounded-full">
+                  <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
+                  <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
+                </div>
+                <div>
+                  <p className="font-semibold">Rajendra kumar</p>
+                  {/* <p className="text-xs text-gray-600">Pen Tester</p> */}
+                </div>
+              </div>
+            </td>
+            <td className="px-4 py-3 border text-md font-semibold">####</td>
+            <td className="px-4 py-3 border text-xs">
+              <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 9910495871 </span>
+            </td>
+           
+          </tr>
+          <tr className="text-gray-700">
+            <td className="px-4 py-3 border">
+              <div className="flex items-center text-sm">
+                <div className="relative w-8 h-8 mr-3 rounded-full">
+                  <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
+                  <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
+                </div>
+                <div>
+                  <p className="font-semibold">Maan singh</p>
+                  {/* <p className="text-xs text-gray-600">6010</p> */}
+                </div>
+              </div>
+            </td>
+            <td className="px-4 py-3 border text-md font-semibold">####</td>
+            <td className="px-4 py-3 border text-xs">
+              <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 9672298902 </span>
+            </td>
+          
+          </tr>
+          <tr className="text-gray-700">
+            <td className="px-4 py-3 border">
+              <div className="flex items-center text-sm">
+                <div className="relative w-8 h-8 mr-3 rounded-full">
+                  <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
+                  <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
+                </div>
+                <div>
+                  <p className="font-semibold">Ram</p>
+                  {/* <p className="text-xs text-gray-600">Data</p> */}
+                </div>
+              </div>
+            </td>
+            <td className="px-4 py-3 border text-md font-semibold">####</td>
+            <td className="px-4 py-3 border text-xs">
+              <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 9871759090 </span>
+            </td>
+          
+          </tr>
+          <tr className="text-gray-700">
+            <td className="px-4 py-3 border">
+              <div className="flex items-center text-sm">
+                <div className="relative w-8 h-8 mr-3 rounded-full">
+                  <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
+                  <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
+                </div>
+                <div>
+                  <p className="font-semibold">Shailendra Kumar</p>
                   {/* <p className="text-xs text-gray-600">Developer</p> */}
                 </div>
               </div>
             </td>
             <td className="px-4 py-3 border text-md font-semibold">####</td>
             <td className="px-4 py-3 border text-xs">
-              <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 9205243234 </span>
+              <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 8127425315 </span>
             </td>
             
           </tr>
-        <tr className="text-gray-700">
+          <tr className="text-gray-700">
             <td className="px-4 py-3 border">
               <div className="flex items-center text-sm">
                 <div className="relative w-8 h-8 mr-3 rounded-full">
@@ -723,36 +972,81 @@ const Extensions = ()=> {
                   <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                 </div>
                 <div>
-                  <p className="font-semibold">Champalal Parihar</p>
-                  {/* <p className="text-xs text-gray-600">Developer</p> */}
-                </div>
-              </div>
-            </td>
-            <td className="px-4 py-3 border text-md font-semibold">6011</td>
-            <td className="px-4 py-3 border text-xs">
-              <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 8769309845 </span>
-            </td>
-            
-          </tr>
-        <tr className="text-gray-700">
-            <td className="px-4 py-3 border">
-              <div className="flex items-center text-sm">
-                <div className="relative w-8 h-8 mr-3 rounded-full">
-                  <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
-                  <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
-                </div>
-                <div>
-                  <p className="font-semibold">Mohit Sharma</p>
+                  <p className="font-semibold">Shudhir chauhan</p>
                   {/* <p className="text-xs text-gray-600">Developer</p> */}
                 </div>
               </div>
             </td>
             <td className="px-4 py-3 border text-md font-semibold">####</td>
             <td className="px-4 py-3 border text-xs">
-              <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 9982234116 </span>
+              <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 7289050421 </span>
             </td>
             
           </tr>
+          <tr className="text-gray-700">
+            <td className="px-4 py-3 border">
+              <div className="flex items-center text-sm">
+                <div className="relative w-8 h-8 mr-3 rounded-full">
+                  <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
+                  <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
+                </div>
+                <div>
+                  <p className="font-semibold">Tulsi</p>
+                  {/* <p className="text-xs text-gray-600">Developer</p> */}
+                </div>
+              </div>
+            </td>
+            <td className="px-4 py-3 border text-md font-semibold">####</td>
+            <td className="px-4 py-3 border text-xs">
+              <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 9783650744 </span>
+            </td>
+            
+          </tr>
+          <tr className="text-gray-700">
+            <td className="px-4 py-3 border">
+              <div className="flex items-center text-sm">
+                <div className="relative w-8 h-8 mr-3 rounded-full">
+                  <img className="object-cover w-full h-full rounded-full" src="/profile.png" alt="" loading="lazy" />
+                  <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
+                </div>
+                <div>
+                  <p className="font-semibold">Umesh</p>
+                  {/* <p className="text-xs text-gray-600">Developer</p> */}
+                </div>
+              </div>
+            </td>
+            <td className="px-4 py-3 border text-md font-semibold">####</td>
+            <td className="px-4 py-3 border text-xs">
+              <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 8766248305 </span>
+            </td>
+            
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{/* --------------------------------------line staff team end------------ */}
+
+
+{/* --------------------------------------service staff start------------ */}
+
+          
+<section className="container mx-auto p-6 font-mono">
+  <div className="w-full mb-8 overflow-hidden rounded-lg shadow-lg">
+    <div className="w-full overflow-x-auto">
+      <table className="w-full">
+        <thead>
+          <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-gray-100 uppercase border-b border-gray-600">
+            <th className="px-4 py-3">Service staffs</th>
+            <th className="px-4 py-3">Extension</th>
+            <th className="px-4 py-3">Mobile no.</th>
+
+          </tr>
+        </thead>
+        <tbody className="bg-white">
+
           <tr className="text-gray-700">
             <td className="px-4 py-3 border">
               <div className="flex items-center text-sm">
@@ -949,7 +1243,7 @@ const Extensions = ()=> {
     </div>
   </div>
 </section>
-{/* --------------------------------------Sales and billing team end------------ */}
+{/* --------------------------------------Service staffs------------ */}
           </div>
         </div>
 

@@ -18,8 +18,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
 
-      <link rel="icon" href="/favicon_1.ico" sizes="any"/>
-
       <link rel="icon" href="/favicon.ico" sizes="any"/>
 
       </head>
